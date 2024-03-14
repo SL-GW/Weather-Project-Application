@@ -6,6 +6,18 @@ body {
   font-weight: 400;
 }
 
+a {
+  color: #385170;
+}
+
+.weather-icon {
+  font-size: 50px;
+}
+
+.current-temperature {
+  font-size: 60px;
+}
+
 .top-box {
   background-color: rgba(225, 225, 225, 0.7);
   border-radius: 20px;
@@ -60,4 +72,13 @@ body {
   border: none;
   color: #ececec;
   transition: ease-in-out 3ms;
+}
+
+.weather-data {
+  color: #385170;
+  font-weight: bold;
+}
+
+.footnote {
+  font-size: 12px;
 }
