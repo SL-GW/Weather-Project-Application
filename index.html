@@ -5,19 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Project Application</title>
   </head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Handlee&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="index.css" />
   <body>
-    <header>
+    <div class="top-box">
       <form>
         <input type="text" placeholder="Enter a city..." required />
         <input type="submit" value="Search" />
       </form>
-    </header>
-    <main>
+
       <h1>☀️ 12ºC<br />Madrid</h1>
       <p>Tuesday 18:00, sunny<br />Humidity: 38%, Wind: 12km/h</p>
-    </main>
+    </div>
 
-    <footer>
+    <div class="bottom-box">
       This project has been coded by
       <a href="https://github.com/SL-GW" target="_blank">Sarah Gray</a>, it is
       open-sourced on
@@ -32,6 +40,6 @@
         target="_blank"
         >Netlify</a
       >
-    </footer>
+    </div>
   </body>
 </html>
