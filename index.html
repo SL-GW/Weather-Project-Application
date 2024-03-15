@@ -17,11 +17,12 @@
   <body>
     <div class="weather-app">
       <div class="top-box">
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="text"
             placeholder="Enter a city..."
             required
+            id="search-input"
             class="search-input"
           />
           <input type="submit" value="Search" class="search-button" />
@@ -30,7 +31,7 @@
         <h1>
           <span class="weather-icon">☀️</span
           ><span class="current-temperature"> 12ºC</span><br />
-          Madrid
+          <span id="current-city">Madrid</span>
         </h1>
 
         <p>
@@ -59,5 +60,6 @@
         </div>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
