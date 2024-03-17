@@ -13,11 +13,12 @@ a {
 
 .weather-app {
   background: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
-  max-width: 60%;
-  margin: 45px auto;
   border-radius: 14px;
-  padding: 10px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.4);
+
+  margin: 45px auto;
+  max-width: 60%;
+  padding: 10px;
 }
 .weather-icon {
   font-size: 50px;
