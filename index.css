@@ -26,6 +26,8 @@ a {
 
 .current-temperature {
   font-size: 60px;
+  position: relative;
+  top: -25px;
 }
 
 .top-box {

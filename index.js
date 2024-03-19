@@ -8,13 +8,15 @@ function updateWeather(response) {
   let wind = response.data.wind.speed;
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#weather-icon");
+  iconElement.innerHTML = `<img src ="${response.data.condition.icon_url}" class="weather-icon"/>`;
 
   timeElement.innerHTML = formatDate(date);
   cityElement.innerHTML = response.data.city;
 
   conditionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
-  temperatureElement.innerHTML = Math.round(temperature);
+  temperatureElement.innerHTML = `${Math.round(temperature)}ºC`;
   windElement.innerHTML = `${Math.round(wind)}km/h`;
 
   console.log(response.data.time * 1000);
@@ -56,4 +58,4 @@ function handleSearchSubmit(event) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
-searchCity("Sheffield");
+searchCity("Madrid");
