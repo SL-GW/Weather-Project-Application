@@ -13,28 +13,31 @@ a {
 
 p {
   font-size: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
+  position: relative;
+  top: -25px;
 }
 .weather-app {
   background: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
   border-radius: 14px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.4);
-
   margin: 40px auto;
   max-width: 60%;
-  padding: 10px;
+  padding: 5px;
 }
 .weather-icon {
   font-size: 50px;
 }
 
 .current-temperature {
-  font-size: 60px;
+  font-size: 70px;
   position: relative;
   top: -25px;
 }
 .current-city {
   font-size: 45px;
+  position: relative;
+  top: -25px;
 }
 
 .top-box {
@@ -42,9 +45,9 @@ p {
   border-radius: 20px;
   box-shadow: 10px 10px 2px 1px rgba(236, 236, 236, 0.2);
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-top: 40px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   padding-top: 20px;
   text-align: center;
   width: 80%;
@@ -56,6 +59,7 @@ p {
   box-shadow: 10px 10px 2px 1px rgba(236, 236, 236, 0.2);
   margin: auto;
   margin-bottom: 50px;
+  margin-top: 30px;
   padding-bottom: 20px;
   padding-top: 30px;
   text-align: center;
@@ -81,9 +85,10 @@ p {
   font-weight: bolder;
   margin: 20px;
   padding-bottom: 10px;
-  padding-top: 10px;
+
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 10px;
 }
 
 .search-button:hover {
@@ -100,10 +105,55 @@ p {
 
 .footnote {
   font-size: 12px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+
+  top: -20px;
 }
 
 .weekly-forecast {
   display: flex;
-  justify-content: space-around;
   font-size: 20px;
+  justify-content: space-around;
+}
+
+.day-one-temperature {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.day-two-temperature {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.day-three-temperature {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.day-four-temperature {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.day-one-high {
+  color: #385170;
+  font-weight: bold;
+}
+
+.day-two-high {
+  color: #385170;
+  font-weight: bold;
+}
+
+.day-three-high {
+  color: #385170;
+  font-weight: bold;
+}
+
+.day-four-high {
+  color: #385170;
+  font-weight: bold;
 }
