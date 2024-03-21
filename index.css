@@ -123,37 +123,7 @@ p {
   justify-content: space-evenly;
 }
 
-.day-two-temperature {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.day-three-temperature {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.day-four-temperature {
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .day-one-high {
-  color: #385170;
-  font-weight: bold;
-}
-
-.day-two-high {
-  color: #385170;
-  font-weight: bold;
-}
-
-.day-three-high {
-  color: #385170;
-  font-weight: bold;
-}
-
-.day-four-high {
   color: #385170;
   font-weight: bold;
 }
