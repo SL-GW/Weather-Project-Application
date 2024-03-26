@@ -20,6 +20,8 @@ function updateWeather(response) {
   windElement.innerHTML = `${Math.round(wind)}km/h`;
 
   console.log(response.data.time * 1000);
+
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -56,7 +58,17 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "c7eebf8ff7o8d23ac85774cb72ct0a65";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+
+  console.log(apiUrl);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
+
   let forecastElement = document.querySelector("#forecast");
 
   let days = ["Tues", "Wed", "Thurs", "Fri", "Sat"];
@@ -76,7 +88,7 @@ function displayForecast() {
             <div class="day-one-temperature">
               <span class="day-one-high">14º</span
               ><span class="day-one-low">10º</span>
-            </div>`;
+            </div></div>`;
   });
   forecastElement.innerHTML = forecastHtml;
 }
@@ -85,4 +97,3 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Madrid");
-displayForecast();
